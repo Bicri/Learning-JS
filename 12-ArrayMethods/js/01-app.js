@@ -8,3 +8,19 @@ const carrito = [
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
 ]
+
+
+//INCLUDES COMMRUEBA SI UN VALOR EXISTE EN UN ARREGLO SIMPLE
+const resultado = meses.includes("Enero");
+console.log(resultado);
+
+//SOME COMPRUEBA SI EXISTE EN UN ARREGLO DE OBJETOS
+const existe = carrito.some((producto)=>{
+    return producto.nombre === "Celular";
+})
+console.log(existe);
+//SOME TAMBIEN FUNCIONA EN UN ARREGLO SIMPLE
+const existe2 = meses.some((mes)=>{
+    return mes === "Febrero";
+})
+console.log(existe2);
