@@ -4,8 +4,22 @@
       "nombre": "Juan NUEVO!",
       "email": "correo2@correo.com",
       "telefono": "12",
-      "empresa": "12212",
+      "empresa": "Codigo con Juan",
       "id": 26
+    },
+    {
+      "nombre": "Saul hernandez",
+      "email": "iortizm1400@alumno.ipn.mx",
+      "telefono": "5558088128",
+      "empresa": "sas",
+      "id": 27
+    },
+    {
+      "nombre": "Isaac Bicri",
+      "email": "vendedor@gmail.com",
+      "telefono": "5558088128",
+      "empresa": "Teams",
+      "id": 28
     }
   ]
 }
