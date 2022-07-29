@@ -1,5 +1,5 @@
-import { eliminarCita, cargarEdicion } from '../funciones.js';
-import { contenedorCitas, heading } from '../selectores.js';
+import {eliminarCita, cargarEdicion} from '../funciones.js';
+import {contenedorCitas, heading} from '../selectores.js'
 
 class UI {
 

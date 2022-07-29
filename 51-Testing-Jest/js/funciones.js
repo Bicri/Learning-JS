@@ -1,19 +1,16 @@
-import Citas from './classes/Citas.js';
-import UI from './classes/UI.js';
+import Citas from './clases/Citas.js';
+import UI from './clases/UI.js';
 
-import { 
-    mascotaInput, 
+import { mascotaInput, 
     propietarioInput, 
     telefonoInput, 
     fechaInput, 
     horaInput, 
     sintomasInput, 
-    formulario 
-} from './selectores.js';
+    formulario } from './selectores.js';
 
 const administrarCitas = new Citas();
 const ui = new UI(administrarCitas);
-
 
 let editando = false;
 
@@ -26,13 +23,10 @@ const citaObj = {
     sintomas: ''
 }
 
-
 export function datosCita(e) {
     //  console.log(e.target.name) // Obtener el Input
      citaObj[e.target.name] = e.target.value;
 }
-
-
 
 export function nuevaCita(e) {
     e.preventDefault();
@@ -41,7 +35,7 @@ export function nuevaCita(e) {
 
     // Validar
     if( mascota === '' || propietario === '' || telefono === '' || fecha === ''  || hora === '' || sintomas === '' ) {
-        ui.imprimirAlerta('Todos los campos son Obligatorios', 'error')
+        ui.imprimirAlerta('Todos los mensajes son Obligatorios', 'error')
 
         return;
     }
